@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | NexaCore Solutions</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background:#111827;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* LOGO */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    border-radius:10px;
+}
+
+.logo-text{
+    font-size:26px;
+    font-weight:bold;
+    color:#00e5ff;
+}
+
+/* NAV */
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00e5ff;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:100px 20px;
+    background:#111827;
+}
+
+.hero h1{
+    font-size:45px;
+    color:#00e5ff;
+    margin-bottom:10px;
+}
+
+.hero p{
+    color:#cbd5e1;
+    font-size:18px;
+}
+
+/* CONTACT FORM */
+.container{
+    max-width:600px;
+    margin:60px auto;
+    background:#1e293b;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 0 10px rgba(0,229,255,0.15);
+}
+
+.container h2{
+    text-align:center;
+    color:#00e5ff;
+    margin-bottom:20px;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+    outline:none;
+}
+
+textarea{
+    height:120px;
+    resize:none;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#00e5ff;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#00bcd4;
+}
+
+/* INFO */
+.info{
+    text-align:center;
+    margin-top:30px;
+    color:#cbd5e1;
+}
+
+.info a{
+    color:#00e5ff;
+    text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+    margin-top:50px;
+}
+</style>
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+
+<div class="logo">
+    <img src="logo.png" alt="Logo">
+    <div class="logo-text">NexaCore</div>
+</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="index.html#services">Services</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Contact Us</h1>
+    <p>Let’s build something amazing together 🚀</p>
+</section>
+
+<!-- FORM -->
+<div class="container">
+
+<h2>Send Message</h2>
+
+<form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <input type="text" placeholder="Subject">
+    <textarea placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+</form>
+
+</div>
+
+<!-- INFO -->
+<div class="info">
+    <p>📍 Kigali, Rwanda</p>
+    <p>📧 nexacoresolutions3@gmail.com</p>
+    <p>📞 +250 783 835 525</p>
+    <p>💬 WhatsApp: <a href="#">Chat Now</a></p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+© 2026 NexaCore Solutions | Kigali, Rwanda
+</footer>
+
+</body>
+</html>

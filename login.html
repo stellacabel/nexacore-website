@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login | NexaCore</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:#0f172a;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.box{
+    background:#111827;
+    padding:30px;
+    width:350px;
+    border-radius:12px;
+    box-shadow:0 0 15px rgba(0,229,255,0.2);
+}
+
+h2{
+    text-align:center;
+    color:#00e5ff;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#00e5ff;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.error{
+    color:red;
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>Login</h2>
+
+<input type="text" id="user" placeholder="Username">
+<input type="password" id="pass" placeholder="Password">
+
+<button onclick="login()">Login</button>
+
+<p class="error" id="msg"></p>
+</div>
+
+<script>
+function login(){
+    let u = document.getElementById("user").value;
+    let p = document.getElementById("pass").value;
+
+    // SIMPLE LOGIN (demo)
+    if(u === "admin" && p === "1234"){
+        localStorage.setItem("user", u);
+        window.location.href = "dashboard.html";
+    }else{
+        document.getElementById("msg").innerText = "Wrong login!";
+    }
+}
+</script>
+
+</body>
+</html>

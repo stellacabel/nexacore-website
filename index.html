@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NexaCore Solutions</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#0f172a;
+    color:white;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 50px;
+    background:#111827;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    border-radius:10px;
+}
+
+.logo-text{
+    font-size:26px;
+    font-weight:bold;
+    color:#00e5ff;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:18px;
+}
+
+nav a:hover{
+    color:#00e5ff;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+    color:#00e5ff;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#cbd5e1;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#00e5ff;
+    color:#000;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+/* TRUST */
+.trust{
+    text-align:center;
+    padding:30px;
+    background:#111827;
+    color:#cbd5e1;
+}
+
+/* SERVICES */
+.services{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.services h2{
+    font-size:40px;
+    color:#00e5ff;
+    margin-bottom:40px;
+}
+
+.boxes{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.box{
+    background:#1e293b;
+    padding:30px;
+    width:280px;
+    border-radius:12px;
+}
+
+.box h3{
+    color:#00e5ff;
+    margin-bottom:10px;
+}
+
+/* WHY */
+.why{
+    background:#111827;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.why h2{
+    color:#00e5ff;
+    margin-bottom:20px;
+}
+
+.why p{
+    max-width:700px;
+    margin:auto;
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+/* CTA */
+.cta{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.cta h2{
+    color:#00e5ff;
+    margin-bottom:20px;
+}
+
+.cta a{
+    display:inline-block;
+    padding:15px 35px;
+    background:#00e5ff;
+    color:#000;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#111827;
+}
+
+/* CHATBOT */
+.chat-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#00e5ff;
+color:#000;
+width:60px;
+height:60px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+cursor:pointer;
+z-index:999;
+}
+
+.chat-box{
+position:fixed;
+bottom:90px;
+right:20px;
+width:320px;
+background:#111827;
+border-radius:12px;
+overflow:hidden;
+display:none;
+z-index:999;
+}
+
+.chat-header{
+background:#00e5ff;
+color:#000;
+padding:15px;
+font-weight:bold;
+}
+
+.chat-messages{
+height:300px;
+overflow-y:auto;
+padding:10px;
+font-size:14px;
+}
+
+.bot-msg,.user-msg{
+margin:8px 0;
+padding:10px;
+border-radius:8px;
+}
+
+.bot-msg{
+background:#1e293b;
+}
+
+.user-msg{
+background:#00e5ff;
+color:black;
+text-align:right;
+}
+
+.chat-input{
+display:flex;
+}
+
+.chat-input input{
+flex:1;
+padding:10px;
+border:none;
+outline:none;
+}
+
+.chat-input button{
+background:#00e5ff;
+border:none;
+padding:10px;
+cursor:pointer;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">
+<img src="logo.png">
+<div class="logo-text">NexaCore</div>
+</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+<section class="hero">
+<h1>We Build Digital Solutions That Grow Your Business</h1>
+<p>Websites • Systems • Branding • IT Support</p>
+<a href="login.html" class="btn">Get Started</a>
+</section>
+
+<!-- TRUST -->
+<section class="trust">
+<p>Trusted by businesses in Rwanda 🇷🇼</p>
+</section>
+
+<!-- SERVICES -->
+<section class="services">
+<h2>Our Services</h2>
+
+<div class="boxes">
+<div class="box">
+<h3>🌐 Websites</h3>
+<p>Modern business websites.</p>
+</div>
+
+<div class="box">
+<h3>💻 Systems</h3>
+<p>POS, hotel, shop systems.</p>
+</div>
+
+<div class="box">
+<h3>🎨 Branding</h3>
+<p>Logo & identity design.</p>
+</div>
+</div>
+
+</section>
+
+<!-- WHY -->
+<section class="why">
+<h2>Why NexaCore?</h2>
+<p>
+We help businesses grow with professional websites, systems and branding that convert visitors into customers.
+</p>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<h2>Ready To Grow?</h2>
+<a href="contact.html">Hire Us</a>
+</section>
+
+<footer>
+© 2026 NexaCore Solutions | Kigali, Rwanda
+</footer>
+
+<!-- CHATBOT -->
+<div class="chat-btn" onclick="toggleChat()">💬</div>
+
+<div class="chat-box" id="chatBox">
+
+<div class="chat-header">
+NexaCore Assistant 🤖
+</div>
+
+<div class="chat-messages" id="chatMessages">
+<div class="bot-msg">Hi 👋 Ask about pricing, services or contact.</div>
+</div>
+
+<div class="chat-input">
+<input type="text" id="userInput" placeholder="Type message...">
+<button onclick="sendMessage()">Send</button>
+</div>
+
+</div>
+
+<script>
+function toggleChat(){
+let box=document.getElementById("chatBox");
+box.style.display = box.style.display==="block" ? "none":"block";
+}
+
+function sendMessage(){
+let input=document.getElementById("userInput");
+let msg=input.value.toLowerCase().trim();
+if(msg==="") return;
+
+let messages=document.getElementById("chatMessages");
+let phone="📞 +250783835525";
+
+messages.innerHTML += '<div class="user-msg">'+msg+'</div>';
+
+let reply="Sorry, I don't understand. Ask about pricing, services or contact.";
+
+if(msg.includes("price") || msg.includes("cost") || msg.includes("how much")){
+reply="💰 Website starts from $100.\nFor full pricing contact: " + phone;
+}
+else if(msg.includes("service")){
+reply="🚀 We build websites, systems, branding and IT support.\nContact: " + phone;
+}
+else if(msg.includes("system") || msg.includes("pos")){
+reply="💻 We build POS, hotel and shop systems.\nContact: " + phone;
+}
+else if(msg.includes("website")){
+reply="🌐 Yes we build modern websites for businesses.\nContact: " + phone;
+}
+else if(msg.includes("contact") || msg.includes("whatsapp")){
+reply="📞 Contact us directly: " + phone;
+}
+else if(msg.includes("hi") || msg.includes("hello")){
+reply="👋 Hello! Welcome to NexaCore.";
+}
+
+messages.innerHTML += '<div class="bot-msg">'+reply+'</div>';
+
+input.value="";
+messages.scrollTop = messages.scrollHeight;
+}
+</script>
+
+</body>
+</html>

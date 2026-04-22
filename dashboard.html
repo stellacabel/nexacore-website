@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dashboard | NexaCore</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:#0f172a;
+    color:white;
+}
+
+/* SIDEBAR */
+.sidebar{
+    position:fixed;
+    left:0;
+    top:0;
+    height:100%;
+    width:220px;
+    background:#111827;
+    padding:20px;
+}
+
+.sidebar h2{
+    color:#00e5ff;
+}
+
+.sidebar a{
+    display:block;
+    color:white;
+    text-decoration:none;
+    margin:15px 0;
+}
+
+.sidebar a:hover{
+    color:#00e5ff;
+}
+
+/* MAIN */
+.main{
+    margin-left:240px;
+    padding:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="sidebar">
+<h2>NexaCore</h2>
+<a href="index.html">Website</a>
+<a href="services.html">Services</a>
+<a href="contact.html">Contact</a>
+<a href="#" onclick="logout()">Logout</a>
+</div>
+
+<div class="main">
+<h1>Dashboard</h1>
+
+<div class="card">
+Welcome, <span id="user"></span> 👋
+</div>
+
+<div class="card">
+📊 Total Projects: 3
+</div>
+
+<div class="card">
+💰 Revenue: $0 (demo)
+</div>
+
+</div>
+
+<script>
+let user = localStorage.getItem("user");
+
+if(!user){
+    window.location.href = "login.html";
+}
+
+document.getElementById("user").innerText = user;
+
+function logout(){
+    localStorage.removeItem("user");
+    window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>
